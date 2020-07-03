@@ -3,8 +3,8 @@ import org.launchcode.java.demos.lsn5unittesting.main.Car;
 
 import org.junit.Test;
 import org.junit.Before;
-import static org.junit.Assert.assertEquals;
 
+import static org.junit.Assert.*;
 
 
 public class CarTest {
@@ -21,6 +21,16 @@ public class CarTest {
     public void testInitialGasTank() {
         assertEquals(10, test_car.getGasTankLevel(), .001);
     }
+
+    //Version of testInitialGasTank() using assertFalse().
+//    public void testInitialGasTank() {
+//        assertFalse(test_car.getGasTankLevel() == 0);
+//    }
+
+    //Version of testInitialGasTank() using assertTrue().
+//    public void testInitialGasTank() {
+//        assertTrue(test_car.getGasTankLevel() == 10);
+//    }
 
     //TODO: gasTankLevel is accurate after driving within tank range
 
